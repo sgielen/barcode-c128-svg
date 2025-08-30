@@ -1,40 +1,39 @@
 <?xml version="1.0" standalone="no" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="112" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
-	<g id="bars" fill="black" stroke="none">
-		<rect x="0" y="0" width="2" height="38" />
-		<rect x="3" y="0" width="1" height="38" />
-		<rect x="6" y="0" width="1" height="38" />
-		<rect x="11" y="0" width="1" height="38" />
-		<rect x="13" y="0" width="1" height="38" />
-		<rect x="17" y="0" width="2" height="38" />
-		<rect x="22" y="0" width="1" height="38" />
-		<rect x="26" y="0" width="1" height="38" />
-		<rect x="28" y="0" width="2" height="38" />
-		<rect x="33" y="0" width="1" height="38" />
-		<rect x="37" y="0" width="1" height="38" />
-		<rect x="41" y="0" width="2" height="38" />
-		<rect x="44" y="0" width="1" height="38" />
-		<rect x="46" y="0" width="2" height="38" />
-		<rect x="51" y="0" width="1" height="38" />
-		<rect x="55" y="0" width="1" height="38" />
-		<rect x="59" y="0" width="2" height="38" />
-		<rect x="62" y="0" width="1" height="38" />
-		<rect x="66" y="0" width="1" height="38" />
-		<rect x="70" y="0" width="2" height="38" />
-		<rect x="75" y="0" width="1" height="38" />
-		<rect x="77" y="0" width="2" height="38" />
-		<rect x="80" y="0" width="1" height="38" />
-		<rect x="84" y="0" width="1" height="38" />
-		<rect x="88" y="0" width="1" height="38" />
-		<rect x="91" y="0" width="2" height="38" />
-		<rect x="96" y="0" width="1" height="38" />
-		<rect x="99" y="0" width="2" height="38" />
-		<rect x="104" y="0" width="3" height="38" />
-		<rect x="108" y="0" width="1" height="38" />
-		<rect x="110" y="0" width="2" height="38" />
-		<rect x="112" y="0" width="0" height="38" />
-		<rect x="112" y="0" width="0" height="38" />
-	 <text x="56" text-anchor="middle" y="50" id="code" fill="black" font-size="12px">ABCDEFG</text>
-	</g>
+	<rect x="0" y="0" width="2" height="38" fill="black" stroke="none" />
+	<rect x="3" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="6" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="11" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="13" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="17" y="0" width="2" height="38" fill="black" stroke="none" />
+	<rect x="22" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="26" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="28" y="0" width="2" height="38" fill="black" stroke="none" />
+	<rect x="33" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="37" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="41" y="0" width="2" height="38" fill="black" stroke="none" />
+	<rect x="44" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="46" y="0" width="2" height="38" fill="black" stroke="none" />
+	<rect x="51" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="55" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="59" y="0" width="2" height="38" fill="black" stroke="none" />
+	<rect x="62" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="66" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="70" y="0" width="2" height="38" fill="black" stroke="none" />
+	<rect x="75" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="77" y="0" width="2" height="38" fill="black" stroke="none" />
+	<rect x="80" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="84" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="88" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="91" y="0" width="2" height="38" fill="black" stroke="none" />
+	<rect x="96" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="99" y="0" width="2" height="38" fill="black" stroke="none" />
+	<rect x="104" y="0" width="3" height="38" fill="black" stroke="none" />
+	<rect x="108" y="0" width="1" height="38" fill="black" stroke="none" />
+	<rect x="110" y="0" width="2" height="38" fill="black" stroke="none" />
+	<rect x="112" y="0" width="0" height="38" fill="black" stroke="none" />
+	<rect x="112" y="0" width="0" height="38" fill="black" stroke="none" />
+	<text x="56" text-anchor="middle" y="50" id="code" fill="black" font-size="12px">ABCDEFG</text>
+
 </svg>
