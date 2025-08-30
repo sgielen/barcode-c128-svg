@@ -8,11 +8,10 @@ import (
 	"unicode/utf8"
 )
 
-func barcodeC128(code string, variant string) *barArray {
+func barcodeC128(code string, variant string) (*barArray, error) {
 	codeRunes := strToRunes(code)
 	if len(codeRunes) <= 0 || len(codeRunes) > 80 {
-		fmt.Printf("code length should be between 1 and 80 runes but got %d", len(codeRunes))
-		return nil
+		return nil, fmt.Errorf("code length should be between 1 and 80 runes but got %d", len(codeRunes))
 	}
 	chrs128 := []string{
 		"212222", /* 00 */
@@ -161,7 +160,7 @@ func barcodeC128(code string, variant string) *barArray {
 				codeData = append(codeData, strings.IndexRune(keysA, value))
 			} else {
 				// out of range
-				return nil
+				return nil, fmt.Errorf("out of range")
 			}
 
 		}
@@ -174,7 +173,7 @@ func barcodeC128(code string, variant string) *barArray {
 				codeData = append(codeData, strings.IndexRune(keysB, value))
 			} else {
 				// out of range
-				return nil
+				return nil, fmt.Errorf("out of range")
 			}
 		}
 	case "C":
@@ -185,22 +184,19 @@ func barcodeC128(code string, variant string) *barArray {
 			codeRunes = strToRunes(code)
 		}
 		if len(codeRunes)%2 != 0 {
-			fmt.Print("code length must be even")
-			return nil
+			return nil, fmt.Errorf("code length must be even")
 		}
 		for i := 0; i < len(codeRunes); i += 2 {
 			chrnum := string(codeRunes[i]) + string(codeRunes[i+1])
 			matched, err := regexp.MatchString("([0-9]{2})", chrnum)
 			if err != nil {
-				fmt.Print("Regex error with given C128C")
-				return nil
+				return nil, fmt.Errorf("Regex error with given C128C")
 			}
 			if matched {
 				val, _ := strconv.Atoi(chrnum)
 				codeData = append(codeData, val)
 			} else {
-				fmt.Print("No matches in given Code")
-				return nil
+				return nil, fmt.Errorf("No matches in given Code")
 			}
 		}
 	default:
@@ -341,7 +337,7 @@ func barcodeC128(code string, variant string) *barArray {
 			arr.MaxW += w
 		}
 	}
-	return arr
+	return arr, nil
 }
 
 type sequence struct {
@@ -353,7 +349,6 @@ type sequence struct {
 
 // TODO: finish....
 func get128ABsequence(code string) sequence {
-	fmt.Println(code)
 	re := regexp.MustCompile("([0-31])")
 	matches := re.FindAllString(code, -1)
 	if len(matches) > 0 {
